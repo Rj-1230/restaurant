@@ -1,8 +1,23 @@
-.top{
-    background-image: url('photos/backs.jpg');
-    height: 100vh;
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
 }
-.navbar::before {
+
+#logo img{
+    height: 70px;
+    margin: 10px 30px;
+    border-radius: 100%;
+}
+
+#navbar{
+    display:flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+}
+
+#navbar::before {
     content: "";
     background-color: black;
     position: absolute;
@@ -11,100 +26,132 @@
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 0.4;
+    opacity: 0.7;
 }
 
-.navbar li{
-    display:inline-block;
-    padding: 0px 35px 0px 35px;
-    vertical-align: middle;
+#navbar ul{
+    display: flex;
 }
 
-.navbar li img{
-    height: 70px;
-    filter:invert(100%)
+#navbar ul li{
+    list-style: none;
+    margin: 22px;
+    font-size: 1.5rem;
 }
-.navbar li a{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+#navbar ul li a{
     text-decoration: none;
     color:white;
-    font-size: 25px;
+    padding:10px;
 }
 
-.navbar li a:hover, .navbar li a:active{
-    text-decoration: wavy;
-    color: black;
-    font-size: 28px;
+#navbar ul li a:hover, #navbar ul li a:active{
+    text-decoration: none;
+    color:black;
     background-color: white;
-    padding:20px;
-    border-radius: 20px;
-
+    border-radius:20px;
+    padding: 20px;
 }
 
-.sale{
-    
-    /* transition: all 1s ease-in-out; */
-    padding: 30px;
-    border-radius: 20px;
-    background-color: turquoise;
-    /* transform: rotate(-30deg) translateY(100px); */
-    display: inline-block;
-    font-size: 30px;
-    height: 30%;
-    border: 2px solid black;
-    animation: sales 2s ease-in-out 1s infinite forwards;
-}
-
-@keyframes sales{
-    0%{
-        background-color: red;
-        color: white;
-    }
-    25%{
-        background-color:coral;
-        color: black;
-    }
-    50%{
-        background-color: yellow;
-        color: black;
-    }
-    100%{
-        background-color:cyan;
-        color: black;
-    }
-    75%{
-        background-color: rgb(13, 235, 13);
-        color: black;
-    }
-}
-
-.sale img{
-    height:30px;
-    border-radius: 300px;
-    vertical-align: middle;
-}
-#home::before{
-    background-color: black;
-    z-index:-1;
+/* Home text */
+#home:before{
+    background: url('photos/back.jpg') no-repeat center center/cover;
+    content: "";
     position: absolute;
-    content:"";
-    top: 0;
-    left: 0;
-    opacity:0.8;
-    height:100%;
-    width:100%;
-}
-#home{
-    margin: 10px 0px 0px 100px;
-    display: flex;
-    width:40%;
-    flex-direction: column;  
-    padding:2px;
-    text-align: center;
-    color:white;
-    border:2px solid red;
+    top: 0px;
+    left: 0px;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
 }
 
-.welcome{
+#home {
     display: flex;
+    flex-direction: column;
+    height: 256px;
+    padding: 75px 200px;
+    width:40%;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: rgb(207, 16, 16);
+    padding: 8px;
+    text-align: center;
+}
+
+#home p {
+    color: rgb(52, 22, 121);;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 3px solid white;
+    background-color: maroon;
+    color: white;
+    margin: 20px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#services-container{
+    background: rgba(248, 197, 131,0.4);
+    padding:20px;
+}
+#services{
+    display: flex;
+
+}
+#services-container h1{
+    text-align: center;
+    font-size: 2.4rem;
+    padding:20px;
+}
+
+#services .box{
+    border:2px solid red;
+    border-radius: 20px;
+    width: 30%;
+    margin:20px;
+    padding:20px;
+    background: rgba(164, 241, 241, 0.3);
+}
+
+.box img{
+    height: 200px;
+    width:90%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px;
+}
+.box h2{
+    text-align: center;
+    font-size: 1.6rem;
+    margin:5px;
+}
+.box p{
+    text-align: center;
+    font-size: 1.1rem;
+    margin:10px;
+}
+
+#partners-container {
+    background: rgba(241, 173, 83, 0.897);
+}
+#partners-container .box{
+    display: flex;
+}
+
+#partners-container h1{
+    text-align: center;
+    font-size: 2.4rem;
+    padding:20px;
 }
