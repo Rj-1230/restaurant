@@ -1,0 +1,125 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    flex-direction: column;
+    height:25vh;
+}
+
+#navbar ul li{
+    /* list-style: none; */
+    margin: 20px;
+    font-size: 1rem;
+}
+#navbar ul li a{
+    padding:5px;
+}
+
+#navbar ul li a:hover, #navbar ul li a:active{
+    padding: 8px;
+}
+
+#home {
+    padding: 0px 20px;
+    width:50%;
+    height:75vh;
+}
+
+#home h1 {
+    font-size: 1.5rem;
+}
+
+#home p {
+    font-size: 0.9rem;
+    padding: 5px;
+}
+
+.btn {
+    padding: 5px 10px;
+    margin: 8px;
+    margin-top:15px;
+    font-size: 1rem;
+}
+
+#services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#services-container h1{
+    text-align: center;
+    font-size: 1.8rem;
+    padding:18px;
+}
+
+#services .box{
+    width: 70%;
+}
+
+.box img{
+    height: 100%;
+    width:90%;
+}
+.box h2{
+    text-align: center;
+    font-size: 1.2rem;
+    margin:5px;
+}
+.box p{
+    text-align: center;
+    font-size: 0.9rem;
+    margin:10px;
+}
+
+
+
+
+
+
+/* #partners-container{
+    border:2px solid red;
+} */
+
+#partners-container h1{
+    /* position: relative; */
+    font-size: 1.8rem;
+}
+
+#contact h1 {
+    /* position: relative; */
+    font-size: 1.8rem;
+    margin-left: 0px;
+    text-align: center;
+}
+
+#contact-box form{
+    width:60%;
+}
+
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.4rem;
+    margin: 0.3rem;
+    border: none;
+    border-radius: 9px;
+    font-size: 0.7rem;
+}
+
+footer{
+    background: black;
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+    padding: 9px 20px;
+}
+
+#contact-box label{
+    font-size: 1rem;
+    padding:10px;
+    /* font-weight: bolder; */
+    /* color:white; */
+}
